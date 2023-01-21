@@ -13,4 +13,4 @@ pathlib
 pydrive
 #logging
 numpy
-PIL
+Pillow
