@@ -11,6 +11,6 @@ plotly
 branca
 pathlib
 pydrive
-logging
+#logging
 numpy
 PIL
