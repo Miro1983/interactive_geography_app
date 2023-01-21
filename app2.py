@@ -18,7 +18,7 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 import streamlit as st
 
-import logging
+#import logging
 
 import numpy as np
 from PIL import Image
