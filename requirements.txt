@@ -9,7 +9,6 @@ sqlalchemy.ext
 google.auth
 plotly
 branca
-os
 pathlib
 pydrive
 pydrive.auth
