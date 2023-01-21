@@ -184,7 +184,7 @@ def convert_data(df):
 df = convert_data(df)
 
 
-ORS_API_KEY = '5b3ce3597851110001cf62485af30935d7a34ff5abf5134170c5edb5'
+ORS_API_KEY = st.secrets['ORS_API_KEY']
 
 def geocode(query):
     parameters = {'api_key': ORS_API_KEY, 'text': query}
