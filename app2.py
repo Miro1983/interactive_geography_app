@@ -23,7 +23,7 @@ import logging
 import numpy as np
 from PIL import Image
 
-logging.getLogger('googleapicliet.discovery_cache').setLevel(logging.ERROR)
+#logging.getLogger('googleapicliet.discovery_cache').setLevel(logging.ERROR)
 
 gauth = GoogleAuth()
 gauth.CommandLineAuth()
