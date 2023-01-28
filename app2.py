@@ -26,7 +26,13 @@ from PIL import Image
 #logging.getLogger('googleapicliet.discovery_cache').setLevel(logging.ERROR)
 
 gauth = GoogleAuth()
-gauth.CommandLineAuth()
+gauth.LoadCredentialsFile()
+if gauth.credentials is None:
+    gauth.CommandLineAuth()
+elif gauth.access_token_expired:
+    gauth.Refresh()
+else:
+    gauth.Authorize()
 drive = GoogleDrive(gauth)
 
 options_form2 = st.sidebar.form('options_form2')
