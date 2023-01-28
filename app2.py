@@ -26,7 +26,7 @@ from PIL import Image
 #logging.getLogger('googleapicliet.discovery_cache').setLevel(logging.ERROR)
 
 gauth = GoogleAuth()
-gauth.LoadCredentialsFile()
+gauth.LoadCredentialsFile('client_secrets.json')
 if gauth.credentials is None:
     gauth.CommandLineAuth()
 elif gauth.access_token_expired:
