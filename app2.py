@@ -33,6 +33,8 @@ elif gauth.access_token_expired:
     gauth.Refresh()
 else:
     gauth.Authorize()
+    
+gauth.SaveCredentialsFile("mycreds.txt")
 drive = GoogleDrive(gauth)
 
 options_form2 = st.sidebar.form('options_form2')
