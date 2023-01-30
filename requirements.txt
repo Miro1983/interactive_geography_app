@@ -4,8 +4,8 @@ requests
 matplotlib
 leafmap
 shillelagh
-sqlalchemy
-sqlalchemy.ext
+sqlalchemy < 2.0
+sqlalchemy.ext < 2.0
 google.auth
 plotly
 branca
